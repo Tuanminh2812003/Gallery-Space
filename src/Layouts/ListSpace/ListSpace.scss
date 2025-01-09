@@ -1,0 +1,183 @@
+$Color-title: #2E2E2E;
+$Color-text: #515151;
+
+.ListSpace{
+    border-top: 1px solid #969696;
+    width: 100%;
+    display: flex;
+    padding-top: 56px;
+
+    &__inner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &__header{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+
+            &__title{
+                font-size: 48px;
+                font-weight: 600;
+                color: $Color-title;
+            }
+            &__find{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                input{
+                    height: 48px;
+                    width: 300px;
+                    border-radius: 100px;
+                    padding: 12px 24px;
+                    border: $Color-text 1px solid;
+                }
+
+                &__icon{
+                    position: absolute;
+                    right: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &__tab{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border-bottom: 1px solid #969696;
+            margin-top: 24px;
+
+            label{
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                padding: 12px 32px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $Color-title;
+                    color: white;
+                }
+            }
+        }
+        &__content{
+            display: flex;
+            width: 100%;
+            margin-top: 12px;
+            flex-direction: column;
+
+            .row{
+                align-items: stretch;
+            }
+
+            &__box{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                box-shadow: 5px 5px 15px #888888;
+                margin: 12px 0px;
+                padding: 24px;
+
+                &__title{
+                    font-size: 19px;
+                    font-weight: 600;
+                    color: $Color-title;
+                    text-transform: uppercase;
+                }
+
+                &__image{
+                    background-position: center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 400px;
+                    top: 0;
+                    left: 0;
+                }
+
+                &__info{
+                    display: flex;
+                    font-size: 17px;
+                    margin: 12px 0px;
+
+                    &__item2{
+                        margin-left: 24px;
+                        font-weight: 600;
+                    }
+                }
+                
+                &__button{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: end;
+                    margin-top: 12px;
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100px;
+                        padding: 4px 16px;
+                        border: $Color-title 1px solid;
+                        text-decoration: none;
+                        color: $Color-title;
+                        font-weight: 600;
+                        transition: all 0.1s ease-in;
+
+                        &:hover{
+                            background-color: $Color-title;
+                            color: white;
+                            transition: all 0.1s ease-in;
+                        }
+                    }
+
+                    &__icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#khonggiantrungbay{
+    display: none;
+}
+#khonggiansangtao{
+    display: none;
+}
+#khonggiantrungbay:checked ~ .ListSpace__inner__tab > .ListSpace__inner__tab__item1{
+    background-color: $Color-title;
+    color: white;
+}
+#khonggiansangtao:checked ~ .ListSpace__inner__tab > .ListSpace__inner__tab__item2{
+    background-color: $Color-title;
+    color: white;
+}
+
+#row1{
+    display: none;
+}
+
+#row2{
+    display: none;
+}
+
+#khonggiantrungbay:checked ~ .ListSpace__inner__content > #row1{
+    display: flex;
+}
+
+#khonggiansangtao:checked ~ .ListSpace__inner__content > #row2{
+    display: flex;
+}
