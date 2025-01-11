@@ -38,7 +38,6 @@ $Color-text: #515151;
             &__logo{
                 font-size: 24px;
                 color: $Color-title;
-                width: 20%;
                 font-weight: 500;
                 text-decoration: none;
             }
@@ -46,7 +45,6 @@ $Color-text: #515151;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 60%;
 
                 a{
                     text-decoration: none;
@@ -54,6 +52,7 @@ $Color-text: #515151;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    padding: 4px 16px;
                 }
 
                 ul{
@@ -68,12 +67,17 @@ $Color-text: #515151;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        margin-right: 48px;
+                        height: 100%;
+                        padding-bottom: 2px;
+
+                        &:hover{
+                            border-bottom: $Color-title 2px solid;
+                            font-weight: 600;
+                        }
                     }
                 }
             }
             &__extend{
-                width: 20%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -85,6 +89,18 @@ $Color-text: #515151;
                     color: white;
                     border-radius: 100px;
                     border: 1px solid $Color-title;
+                    cursor: pointer;
+                    border: 1px solid $Color-title;
+                    transition: 0.1s ease-in all;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover{
+                        background-color: white;
+                        color: $Color-title;
+                        transition: 0.1s ease-in all;
+                    }
                 }
                 &__dangnhap{
                     font-size: 16px;
@@ -93,11 +109,38 @@ $Color-text: #515151;
                     color: $Color-title;
                     border-radius: 100px;
                     border: 1px solid $Color-title;
+                    cursor: pointer;
+                    transition: 0.1s ease-in all;
+                    margin: 0px 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover{
+                        background-color: $Color-title;
+                        color: white;
+                        transition: 0.1s ease-in all;
+                    }
                 }
                 &__icon{
                     color: #2E2E2E;
                     font-size: 30px;
                 }
+            }
+        }
+        &__hidden{
+            display: none;
+
+            &__logo{
+                font-size: 24px;
+                color: $Color-title;
+                font-weight: 500;
+                text-decoration: none;
+            }
+            &__menu{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
@@ -146,5 +189,193 @@ $Color-text: #515151;
                 }
             }
         }
+    }
+}
+
+.modalRegister{
+    &__title{
+        font-size: 24px;
+        color: $Color-title;
+        width: 100%;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        width: 100%;
+
+        &__label{
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+        &__input{
+            font-size: 17px;
+            margin-bottom: 24px;
+            width: 100%;
+            background-color: #EDEDED;
+            padding: 12px;
+            border: 0px;
+        }
+        &__button{
+            background-color: $Color-title;
+            color: white;
+            border-radius: 100px;
+            padding: 4px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $Color-title;
+
+            &:hover{
+                background-color: white;
+                color: $Color-title;
+            }
+        }
+        &__memory{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 24px;
+
+            &__save{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                label{
+                    margin-left: 12px;
+                    font-size: 17px;
+                    color: #969696;
+
+                    &:hover{
+                        color: $Color-title;
+                    }
+                }
+            }
+            &__forget{
+                font-size: 17px;
+                cursor: pointer;
+                color: #969696;
+
+                &:hover{
+                    color: $Color-title;
+                }
+            }
+        }
+        &__Userforget{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: end;
+            color: #969696;
+            font-size: 17px;
+            margin-bottom: 24px;
+        }
+        &__Userbutton{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            &__close{
+                display: flex;
+                align-items: center;
+                padding: 4px 16px;
+                font-size: 16px;
+                border-radius: 100px;
+                border: 2px $Color-title solid;
+                color: $Color-title;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                padding: 4px 16px;
+                font-size: 16px;
+                border-radius: 100px;
+                border: 2px $Color-title solid;
+                color: white;
+                background-color: $Color-title;
+            }
+        }
+    }
+    &__oath{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &__text{
+            font-size: 17px;
+            color: $Color-title;
+        }
+        &__logo{
+            display: flex;
+
+            &__item{
+                margin-left: 24px;
+            }
+        }
+    }
+    &__have{
+        color: #969696;
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    &__login{
+        color: $Color-title;
+        background-color: white;
+        border-radius: 100px;
+        padding: 4px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $Color-title;
+    }
+}
+
+@media (max-width: 1189.98px) {
+    .Web__header__inner{
+        display: none;
+    }
+    .Web__header__hidden{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Web__header__hidden__logo{
+        font-size: 17px;
+    }
+}
+@media (max-width: 928.98px) {
+    .Web__home__sectionMain__inner__title{
+        width: 90%;
+    }
+    .Web__home__sectionMain{
+        height: 80vh;
+    }
+}
+@media (max-width: 650.98px) {
+    .container-main{
+        padding: 0px 40px;
+    }
+    .Web__home__sectionMain{
+        height: 70vh;
+    }
+    .Web__home__section1__inner__title{
+        font-size: 32px; 
+    }
+}
+@media (max-width: 450.98px) {
+    .container-main{
+        padding: 0px 12px;
+    }
+    .Web__home__sectionMain__inner__title{
+        font-size: 40px;        
+    }
+    .Web__home__sectionMain{
+        height: 50vh;
     }
 }

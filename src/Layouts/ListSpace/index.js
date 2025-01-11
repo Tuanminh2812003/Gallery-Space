@@ -80,7 +80,7 @@ function ListSpace() {
                                                 }}
                                             ></div>
                                             <div className="ListSpace__inner__content__box__button">
-                                                <Link to={"/"}>
+                                                <Link to={`/space/${khongGian.prop}`}>
                                                     <div className="ListSpace__inner__content__box__button__text">
                                                         CHI TIẾT
                                                     </div>
