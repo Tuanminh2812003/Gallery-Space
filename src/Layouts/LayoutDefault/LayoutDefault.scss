@@ -9,6 +9,11 @@ $Color-text: #515151;
     display: flex;
 }
 
+.active-link {
+    border-bottom: 2px solid #2E2E2E; /* $Color-title */
+    font-weight: 600;
+}
+
 .Web{
     color: $Color-text;
     font-family: "Inter", serif;
@@ -53,6 +58,11 @@ $Color-text: #515151;
                     align-items: center;
                     justify-content: center;
                     padding: 4px 16px;
+
+                    &:hover{
+                        border-bottom: $Color-title 2px solid;
+                        font-weight: 600;
+                    }
                 }
 
                 ul{
@@ -62,19 +72,7 @@ $Color-text: #515151;
                     align-items: center;
                     height: 100%;
                     margin: 0px;
-
-                    li{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        height: 100%;
-                        padding-bottom: 2px;
-
-                        &:hover{
-                            border-bottom: $Color-title 2px solid;
-                            font-weight: 600;
-                        }
-                    }
+                    list-style-type: none;
                 }
             }
             &__extend{
@@ -153,6 +151,11 @@ $Color-text: #515151;
         &__inner{
             width: 100%;
 
+            .col-md-3{
+                display: flex;
+                flex-direction: column;
+            }
+
             &__logo{
                 font-size: 48px;
                 font-weight: 500;
@@ -175,11 +178,23 @@ $Color-text: #515151;
             &__title{
                 font-size: 19px;
                 margin-bottom: 12px;
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    font-weight: 600;
+                }
             }
             &__text{
                 font-size: 17px;
                 font-weight: 300;
                 margin-bottom: 4px;
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    font-weight: 600;
+                }
             }
             &__icon{
                 display: flex;
@@ -356,6 +371,13 @@ $Color-text: #515151;
     .Web__home__sectionMain{
         height: 80vh;
     }
+    .Web__footer__inner__logo{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .Web__footer{
+        padding: 24px 0px;
+    }
 }
 @media (max-width: 650.98px) {
     .container-main{
@@ -365,7 +387,7 @@ $Color-text: #515151;
         height: 70vh;
     }
     .Web__home__section1__inner__title{
-        font-size: 32px; 
+        font-size: 20px; 
     }
 }
 @media (max-width: 450.98px) {

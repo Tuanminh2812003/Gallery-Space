@@ -25,6 +25,7 @@ $Color-text: #515151;
             }
             &__disc{
                 font-size: 17px;
+                margin-top: 46px;
             }
         }
 
@@ -72,5 +73,12 @@ $Color-text: #515151;
                 }
             }
         }
+    }
+}
+
+@media(max-width: 768px){
+    .Contact{
+        margin-top: 48px;
+        margin-top: 0px;
     }
 }

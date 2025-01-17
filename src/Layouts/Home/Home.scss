@@ -33,27 +33,37 @@ $Color-text: #515151;
                 margin-bottom: 24px;
             }
             &__button{
-                padding: 4px 16px;
-                background-color: $Color-title;
-                color: white;
                 display: flex;
-                border-radius: 100px;
+                width: 100%;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
+                margin-top: 12px;
 
-
-                &__text{
-                    font-size: 16px;
+                a{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    border-radius: 100px;
+                    padding: 4px 16px;
+                    border: $Color-title 1px solid;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: all 0.1s ease-in;
+                    background-color: $Color-title;
+                    color: white;
+
+                    &:hover{
+                        background-color: white;
+                        color: $Color-title;
+                        transition: all 0.1s ease-in;
+                    }
                 }
+
                 &__icon{
-                    margin-left: 4px;
-                    font-size: 20px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-left: 4px;
                 }
             }
         }
@@ -72,14 +82,6 @@ $Color-text: #515151;
                 font-weight: 500;
             }
             &__content{
-
-                .row{
-                    justify-content: space-between;
-
-                    .col-6{
-                        width: 48%;
-                    }
-                }
 
                 &__left{
 
@@ -145,28 +147,37 @@ $Color-text: #515151;
                         margin-top: 20px;
                     }
                     &__button{
-                        padding: 4px 16px;
-                        background-color: $Color-title;
-                        color: white;
                         display: flex;
-                        border-radius: 100px;
+                        width: 100%;
                         align-items: center;
-                        justify-content: space-between;
-                        max-width: fit-content;
-                        margin-top: 49px;
-
-                        &__text{
-                            font-size: 16px;
+                        justify-content: start;
+                        margin-top: 12px;
+    
+                        a{
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            border-radius: 100px;
+                            padding: 4px 16px;
+                            border: $Color-title 1px solid;
+                            text-decoration: none;
+                            font-weight: 600;
+                            transition: all 0.1s ease-in;
+                            background-color: $Color-title;
+                            color: white;
+    
+                            &:hover{
+                                background-color: white;
+                                color: $Color-title;
+                                transition: all 0.1s ease-in;
+                            }
                         }
+    
                         &__icon{
-                            margin-left: 4px;
-                            font-size: 20px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            margin-left: 4px;
                         }
                     }
                 }
@@ -206,6 +217,14 @@ $Color-text: #515151;
                     border: 2px solid $Color-title;
                     color: $Color-title;
                     border-radius: 100px;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in;
+
+                    &:hover{
+                        background-color: $Color-title;
+                        color: white;
+                        transition: all 0.2s ease-in;
+                    }
 
                     &__text{
                         font-size: 16px;
@@ -219,9 +238,16 @@ $Color-text: #515151;
                 }
             }
             &__content{
+                overflow: auto;
 
                 .row{
-                    align-items: stretch;
+                    flex-wrap: nowrap;
+
+                    .col-3{
+                        min-width: 312px;
+                        text-decoration: none;
+                        color: $Color-text;
+                    }
                 }
 
                 &__box{
@@ -230,6 +256,108 @@ $Color-text: #515151;
                     box-shadow: 5px 5px 5px #888888;
                     padding-bottom: 44px;
                     height: 100%;
+                    cursor: pointer;
+                    position: relative;
+
+                    &:hover > .Web__home__section2__inner__content__box--opacity > .Web__home__section2__inner__content__box--opacity__back{
+                        opacity: 0.6;
+                        transition: all ease-in 0.2s;
+                    }
+                    &:hover > .Web__home__section2__inner__content__box--opacity > .Web__home__section2__inner__content__box--opacity__button{
+                        opacity: 1;
+                        transition: all ease-in 0.2s;
+                    }
+                    &:hover > .Web__home__section2__inner__content__box__image{
+                        background-size: 200%;
+                        background-repeat: no-repeat;
+                        transition: all 0.2s ease-in;
+                    }
+
+                    &--opacity{
+                        width: 100%;
+                        height: 300px;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: all ease-in 0.2s;
+
+                        &__back{
+                            background-color: #2E2E2E;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            transition: all ease-in 0.2s;
+                            position: absolute;
+                        }
+
+                        &__button{
+                            opacity: 0;
+                            align-items: center;
+                            justify-content: start;
+                            margin: 48px 0px;
+                            text-decoration: none;
+                            position: relative;
+                            z-index: 1;
+                
+                            &__inner{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                font-size: 16px;
+                                padding: 4px 16px;
+                                border-radius: 100px;
+                                color: white;
+                                border: 2px solid white;
+                
+                                &__icon{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-left: 2px;
+                                }
+                            }
+                        }
+                    }
+
+                    &__button{
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: start;
+                        margin-top: 12px;
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 100px;
+                        padding: 4px 16px;
+                        border: $Color-title 1px solid;
+                        text-decoration: none;
+                        font-weight: 600;
+                        transition: all 0.1s ease-in;
+                        background-color: $Color-title;
+                        color: white;
+
+                        &:hover{
+                            background-color: white;
+                            color: $Color-title;
+                            transition: all 0.1s ease-in;
+                        }
+                    }
+
+                    &__icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 4px;
+                    }
+                }
     
                     &__image{
                         background-position: center;
@@ -238,6 +366,7 @@ $Color-text: #515151;
                         height: 300px;
                         top: 0;
                         left: 0;
+                        transition: all 0.2s ease-in;
                     }
                     &__title{
                         font-size: 19px;
@@ -259,5 +388,69 @@ $Color-text: #515151;
             margin-top: 12px;
             margin-bottom: 24px;
         }
+    }
+}
+
+.Web__home__section2__inner__header__more--hide{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .Web__home__section1{
+        display: none;
+    }
+    .Web__home__sectionMain__inner__title{
+        font-size: 32px;
+    }
+    .Web__home__section2__inner__content{
+        .row{
+            .col-3{
+                min-width: 250px;
+            }
+        }
+        &__box{
+            padding-bottom: 8px;
+
+            &__image{
+                height: 160px;
+            }
+        }
+    }
+    .Web__home__section2__inner__content__box--opacity{
+        height: 160px;
+    }
+    .Web__home__section2__inner{
+        &__header{
+            &__title{
+                font-size: 19px;
+            }
+        }
+    }
+    .Web__home__section2__inner__header__more{
+        display: none;
+    }
+    .Web__home__section2__inner__header__more--hide{
+        display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 16px;
+                    border: 2px solid $Color-title;
+                    color: $Color-title;
+                    border-radius: 100px;
+                    text-decoration: none;
+                    margin-top: 24px;
+
+                    &__text{
+                        font-size: 16px;
+                    }
+                    &__icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 4px;
+                    }
+    }
+    .Web__home__section2__inner__content__box--opacity__button__inner{
+        font-size: 14px !important;
     }
 }

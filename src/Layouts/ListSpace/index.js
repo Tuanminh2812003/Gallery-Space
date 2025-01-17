@@ -50,7 +50,7 @@ function ListSpace() {
                         <div className="ListSpace__inner__content">
                             <div className="row" id="row1">
                                 {filteredSpaces.map((khongGian) => (
-                                    <div className="col-6" key={khongGian.id}>
+                                    <Link to={`/space/${khongGian.prop}`} className="col-md-6" key={khongGian.id}>
                                         <div className="ListSpace__inner__content__box">
                                             <div className="ListSpace__inner__content__box__title">
                                                 {khongGian.title}
@@ -90,7 +90,7 @@ function ListSpace() {
                                                 </Link>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))}
                             </div>
                             <div className="row" id="row2">

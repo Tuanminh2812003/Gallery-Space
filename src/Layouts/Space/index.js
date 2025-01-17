@@ -65,6 +65,20 @@ function Space() {
                     </div>
                 </div>
             </div>
+            <div className="Space__disc">
+                <div className="container-main">
+                    <div className="Space__disc__inner">
+                        <div className="Space__disc__inner__title">
+                            Mô tả
+                        </div>
+                        {descriptionParts.map((part, index) => (
+                            <div key={index} className="Space__disc__inner__des">
+                                {part.trim()}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
             <Home_Section2/>
         </>
     );

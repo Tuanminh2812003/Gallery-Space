@@ -1,4 +1,5 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
+import "./Navbar.css";
 import "./LayoutDefault.scss";
 import { IoMdSearch } from "react-icons/io";
 import { AiOutlineGlobal } from "react-icons/ai";
@@ -28,10 +29,12 @@ function LayoutDefault(){
     const handleRegisterClick = () => {
         setShowModalRegister(true);
         setShowModalLogin(false);
+        setNavToggle(prevData => !prevData);
     };
     const handleLoginClick = () => {
         setShowModalLogin(true);
         setShowModalRegister(false);
+        setNavToggle(prevData => !prevData);
     };
     const handleForgetClick = () => {
         setShowModalForget(true);
@@ -48,6 +51,7 @@ function LayoutDefault(){
     };
 
     const handleLogin = (event) => {
+        
         event.preventDefault();
 
         const { email, password } = formData;
@@ -69,6 +73,11 @@ function LayoutDefault(){
         }
     };
 
+    const [navToggle, setNavToggle] = useState(false);
+    const navHandler = () => {
+        setNavToggle(prevData => !prevData);
+    }
+
     return(
         <>
             <div className="Web">
@@ -81,21 +90,36 @@ function LayoutDefault(){
                                 </Link>
                                 <div className="Web__header__inner__menu">
                                     <ul>
-                                        <Link to={"/listspace"}>
-                                            <li>
+                                        <li>
+                                            <NavLink
+                                                to="/listspace"
+                                                className={({ isActive }) =>
+                                                    isActive ? "active-link" : ""
+                                                }
+                                            >
                                                 Danh sách không gian
-                                            </li>
-                                        </Link>
-                                        <Link to={"/aboutus"}>
-                                            <li>
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/aboutus"
+                                                className={({ isActive }) =>
+                                                    isActive ? "active-link" : ""
+                                                }
+                                            >
                                                 Về chúng tôi
-                                            </li>
-                                        </Link>
-                                        <Link to={"/contact"}>
-                                            <li>
+                                            </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                to="/contact"
+                                                className={({ isActive }) =>
+                                                    isActive ? "active-link" : ""
+                                                }
+                                            >
                                                 Liên hệ
-                                            </li>
-                                        </Link>
+                                            </NavLink>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div className="Web__header__inner__extend">
@@ -114,11 +138,72 @@ function LayoutDefault(){
                                 </div>
                             </div>
                             <div className="Web__header__hidden">
+                                <div className="Web__header__hidden__menu">
+                                    <div type = "button" className={`hamburger-menu ${navToggle ? 'hamburger-menu-change' : ""}`} onClick={navHandler}>
+                                        <div className='bar-top'></div>
+                                        <div className='bar-middle'></div>
+                                        <div className='bar-bottom'></div>
+                                    </div>
+                                    <div className={`navbar-collapse ${navToggle ? 'show-navbar-collapse' : ""}`}>
+                                                        <div className='navbar-collapse-content'>
+                                                            <ul className='navbar-nav'>
+                                                                <li>
+                                                                    <NavLink
+                                                                        to="/listspace"
+                                                                        className={({ isActive }) =>
+                                                                            isActive ? "active-link" : ""
+                                                                        }
+                                                                        onClick={navHandler}
+                                                                    >
+                                                                        Danh sách không gian
+                                                                    </NavLink>
+                                                                </li>
+                                                                <li>
+                                                                    <NavLink
+                                                                        to="/aboutus"
+                                                                        className={({ isActive }) =>
+                                                                            isActive ? "active-link" : ""
+                                                                        }
+                                                                        onClick={navHandler}
+                                                                    >
+                                                                        Về chúng tôi
+                                                                    </NavLink>
+                                                                </li>
+                                                                <li>
+                                                                    <NavLink
+                                                                        to="/contact"
+                                                                        className={({ isActive }) =>
+                                                                            isActive ? "active-link" : ""
+                                                                        }
+                                                                        onClick={navHandler}
+                                                                    >
+                                                                        Liên hệ
+                                                                    </NavLink>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="Web__header__inner__extend__dangky" onClick={handleRegisterClick}>
+                                                                        ĐĂNG KÝ
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div className="Web__header__inner__extend__dangnhap" onClick={handleLoginClick}>
+                                                                        ĐĂNG NHẬP
+                                                                    </div>
+                                                                </li>
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                </div>
                                 <Link to={"/"} className="Web__header__hidden__logo">
                                     VIRTUAL GALLERY
                                 </Link>
-                                <div className="Web__header__hidden__menu">
-                                    <FaBars/>
+                                <div className="Web__header__inner__extend">
+                                    
+                                    <div className="Web__header__inner__extend__icon">
+                                        <IoMdSearch />
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -134,7 +219,7 @@ function LayoutDefault(){
                         <div className="container-main">
                             <div className="Web__footer__inner">
                                 <div className="row">
-                                    <div className="col-6">
+                                    <div className="col-md-6">
                                         <div className="Web__footer__inner__logo">
                                             VIRTUAL GALLERY
                                         </div>
@@ -163,36 +248,36 @@ function LayoutDefault(){
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-md-3">
                                         <div className="Web__footer__inner__title">
                                             DANH SÁCH KHÔNG GIAN
                                         </div>
-                                        <div className="Web__footer__inner__text">
+                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Đêm đầy sao
-                                        </div>
-                                        <div className="Web__footer__inner__text">
+                                        </Link>
+                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Kỳ quan thiên nhiên
-                                        </div>
-                                        <div className="Web__footer__inner__text">
+                                        </Link>
+                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Nơi tình yêu bắt đầu
-                                        </div>
-                                        <div className="Web__footer__inner__text">
+                                        </Link>
+                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Cầu vòng lấp lánh
-                                        </div>
-                                        <div className="Web__footer__inner__text">
+                                        </Link>
+                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Ánh sao và bầu trời
-                                        </div>
-                                        <div className="Web__footer__inner__text">
+                                        </Link>
+                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Màu của nắng
-                                        </div>
+                                        </Link>
                                     </div>
-                                    <div className="col-3">
-                                        <div className="Web__footer__inner__title">
+                                    <div className="col-md-3">
+                                        <Link to={"/aboutus"} className="Web__footer__inner__title">
                                             VỀ CHÚNG TÔI
-                                        </div>
-                                        <div className="Web__footer__inner__title">
+                                        </Link>
+                                        <Link to={"/contact"} className="Web__footer__inner__title">
                                             LIÊN HỆ VỚI CHÚNG TÔI
-                                        </div>
+                                        </Link>
                                         <div className="Web__footer__inner__icon">
                                             <div className="Web__footer__inner__icon__inner">
                                                 <FaFacebook />
