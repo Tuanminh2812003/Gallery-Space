@@ -92,7 +92,6 @@ function AboutUs(){
                                 <div className="col-md-6">
                                     <div className="AboutUs__inner__section1__right">
                                         <img src="/Web/About3.png"/>
-                                        <img src="/Web/About4.png"/>
                                     </div>
                                 </div>
                             </div>

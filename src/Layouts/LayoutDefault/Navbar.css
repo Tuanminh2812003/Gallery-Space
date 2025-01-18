@@ -68,7 +68,6 @@
     padding-bottom: 4px;
 }
 .navbar-nav li a:hover{
-    border-bottom: #2E2E2E 2px solid;
     font-weight: 600;
 }
 .navbar-social li{

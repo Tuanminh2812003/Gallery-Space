@@ -10,7 +10,6 @@ $Color-text: #515151;
 }
 
 .active-link {
-    border-bottom: 2px solid #2E2E2E; /* $Color-title */
     font-weight: 600;
 }
 
@@ -60,7 +59,6 @@ $Color-text: #515151;
                     padding: 4px 16px;
 
                     &:hover{
-                        border-bottom: $Color-title 2px solid;
                         font-weight: 600;
                     }
                 }
