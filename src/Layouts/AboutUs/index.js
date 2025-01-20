@@ -14,7 +14,14 @@ function AboutUs(){
                             <div className="row r1">
                                 <div className="col-6">
                                     <div className="AboutUs__inner__section1__left">
-                                        <img src="/Web/About1.png"/>
+                                        <div className="AboutUs__inner__section1__left__image">
+                                            <div className="AboutUs__inner__section1__left__image__image1">
+
+                                            </div>
+                                            <div className="AboutUs__inner__section1__left__image__image2">
+                                                
+                                            </div>
+                                        </div>
                                         <div className="AboutUs__inner__section1__left__title">
                                             VỀ CHÚNG TÔI
                                         </div>
@@ -38,7 +45,27 @@ function AboutUs(){
                                 </div>
                                 <div className="col-6">
                                     <div className="AboutUs__inner__section1__right">
-                                        <img src="/Web/About2.png"/>
+                                        <div className="AboutUs__inner__section1__right__image">
+
+                                            <div className="AboutUs__inner__section1__right__image__image1">
+
+                                            </div>
+                                            <div className="AboutUs__inner__section1__right__image__image2">
+                                                
+                                            </div>
+                                            <div className="AboutUs__inner__section1__right__image__image3">
+                                                
+                                            </div>
+                                            <div className="AboutUs__inner__section1__right__image__image4">
+                                                
+                                            </div>
+                                            <div className="AboutUs__inner__section1__right__image__image5">
+                                                
+                                            </div>
+                                            <div className="AboutUs__inner__section1__right__image__image6">
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +86,29 @@ function AboutUs(){
                                 </div>
                                 <div className="col-12" style={{marginTop: "24px"}}>
                                     <div className="AboutUs__inner__section1__right">
-                                        <img src="/Web/About2.png"/>
+                                    <div className="AboutUs__inner__section1__right">
+                                    <div className="AboutUs__inner__section1__right__image">
+
+                                        <div className="AboutUs__inner__section1__right__image__image1">
+
+                                        </div>
+                                        <div className="AboutUs__inner__section1__right__image__image2">
+                                            
+                                        </div>
+                                        <div className="AboutUs__inner__section1__right__image__image3">
+                                            
+                                        </div>
+                                        <div className="AboutUs__inner__section1__right__image__image4">
+                                            
+                                        </div>
+                                        <div className="AboutUs__inner__section1__right__image__image5">
+                                            
+                                        </div>
+                                        <div className="AboutUs__inner__section1__right__image__image6">
+                                            
+                                        </div>
+                                    </div>
+                                    </div>
                                     </div>
                                     <div className="AboutUs__inner__section1__left__button">
                                             <Link to={"/contact"}>

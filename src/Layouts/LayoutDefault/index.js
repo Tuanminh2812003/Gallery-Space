@@ -252,7 +252,7 @@ function LayoutDefault(){
                                         <div className="Web__footer__inner__title">
                                             DANH SÁCH KHÔNG GIAN
                                         </div>
-                                        <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
+                                        <Link to={"/space/nghe_thuat_sang_tao"} className="Web__footer__inner__text">
                                             Đêm đầy sao
                                         </Link>
                                         <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">

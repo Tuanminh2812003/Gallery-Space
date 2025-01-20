@@ -21,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/space/:prop" element={<Space />} />
           <Route path="/user/:prop" element={<User />} />
+
         </Route>
       </Routes>
     </>

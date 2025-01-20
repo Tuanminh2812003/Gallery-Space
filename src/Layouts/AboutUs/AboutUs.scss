@@ -63,10 +63,107 @@ $Color-text: #515151;
                         margin-left: 4px;
                     }
                 }
+
+                &__image{
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 30vh;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    &__image1{
+                        height: 70%;
+                        width: 30%;
+                        background-image: url("../../../public//Object/Chair\ 1_2.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                    }
+                    &__image2{
+                        height: 100%;
+                        width: 65%;
+                        background-image: url("../../../public//Object/Statue\ 1_1.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                    }
+                }
             }
             &__right{
                 display: flex;
                 flex-direction: column;
+                height: 100%;
+
+                &__image{
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 100%;
+                    width: 100%;
+
+                    &__image1{
+                        height: 29%;
+                        width: 47.5%;
+                        background-image: url("../../../public/Object/Statue\ 2_2.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                        margin-right: 5%;
+                    }
+                    &__image2{
+                        height: 29%;
+                        width: 47.5%;
+                        background-image: url("../../../public/Object/Chair\ 2_1.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                    }
+                    &__image3{
+                        height: 29%;
+                        width: 20%;
+                        background-image: url("../../../public/Object/Statue\ 1_2.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                        margin-top: 6%;
+                        margin-bottom: 6%;
+                        margin-right: 5%;
+                    }
+                    &__image4{
+                        height: 29%;
+                        width: 47.5%;
+                        background-image: url("../../../public/Object/Chair\ 2_2.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                        margin-top: 6%;
+                        margin-bottom: 6%;
+                    }
+                    &__image5{
+                        height: 29%;
+                        width: 65%;
+                        background-image: url("../../../public/Object/Statue\ 3_2.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                        margin-right: 5%;
+                    }
+                    &__image6{
+                        height: 15%;
+                        width: 30%;
+                        background-image: url("../../../public/Object/Statue\ 3_1.png");
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 24px;
+                    }
+                }
             }
         }
     }
@@ -93,5 +190,8 @@ $Color-text: #515151;
         label{
             font-size: 17px !important;
         }
+    }
+    .AboutUs__inner__section1__right{
+        height: 60vh;
     }
 }

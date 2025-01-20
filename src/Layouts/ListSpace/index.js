@@ -94,7 +94,47 @@ function ListSpace() {
                                 ))}
                             </div>
                             <div className="row" id="row2">
-                                Không gian sáng tạo
+                            <Link to={`https://virtual-gallery-sandy.vercel.app/custom`} className="col-md-6">
+                                        <div className="ListSpace__inner__content__box">
+                                            <div className="ListSpace__inner__content__box__title">
+                                                Không gian sáng tạo
+                                            </div>
+                                            <div className="ListSpace__inner__content__box__info">
+                                                <div className="ListSpace__inner__content__box__info__item">
+                                                    <div className="ListSpace__inner__content__box__info__item__item">
+                                                        Tự tạo không gian cho riêng bạn
+                                                    </div>
+                                                    <div className="ListSpace__inner__content__box__info__item__item">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div className="ListSpace__inner__content__box__info__item2">
+                                                    <div className="ListSpace__inner__content__box__info__item2__item">
+                                                        
+                                                    </div>
+                                                    <div className="ListSpace__inner__content__box__info__item2__item">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                className="ListSpace__inner__content__box__image"
+                                                style={{
+                                                    backgroundImage: `url(${danhSachKhongGian[0].image})`,
+                                                }}
+                                            ></div>
+                                            <div className="ListSpace__inner__content__box__button">
+                                                <Link to={``}>
+                                                    <div className="ListSpace__inner__content__box__button__text">
+                                                        CHI TIẾT
+                                                    </div>
+                                                    <div className="ListSpace__inner__content__box__button__icon">
+                                                        <MdArrowOutward />
+                                                    </div>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </Link>
                             </div>
                         </div>
                     </div>
