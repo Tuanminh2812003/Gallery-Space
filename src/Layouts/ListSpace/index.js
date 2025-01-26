@@ -94,7 +94,7 @@ function ListSpace() {
                                 ))}
                             </div>
                             <div className="row" id="row2">
-                            <Link to={`https://virtual-gallery-sandy.vercel.app/custom`} className="col-md-6">
+                            <Link to={`https://virtual-gallery-main.vercel.app/custom`} className="col-md-6">
                                         <div className="ListSpace__inner__content__box">
                                             <div className="ListSpace__inner__content__box__title">
                                                 Không gian sáng tạo
