@@ -11,7 +11,29 @@ $Color-text: #515151;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px;
-    min-height: 92vh;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
 
     &__inner{
         display: flex;
@@ -53,12 +75,18 @@ $Color-text: #515151;
                 border-radius: 100px;
                 color: $Color-title;
                 background-color: white;
+                transition: all 0.2s ease;
 
                 &__icon{
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     margin-left: 2px;
+                }
+                &:hover{
+                    color: white;
+                    background-color: $Color-title;
+                    transition: all 0.2s ease;
                 }
             }
         }

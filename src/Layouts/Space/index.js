@@ -21,11 +21,11 @@ function Space() {
 
     return (
         <>
-            <div className="Space"
-                style={{
-                    backgroundImage: `url(${khongGian.spaceImage})`,
-                }}
-            >
+            <div className="Space">
+                <video autoPlay loop muted className="Space__video">
+                    <source src={khongGian.spaceVideo} type="video/mp4" />
+                </video>
+                <div className="Space__overlay"></div>
                 <div className="container-main">
                     <div className="Space__inner">
                         <div className="Space__inner__disc">KHÔNG GIAN TRƯNG BÀY</div>
