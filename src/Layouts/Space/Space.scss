@@ -33,6 +33,10 @@ $Color-text: #515151;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: -1;
+
+        &--gallery{
+            background-color: rgba(0, 0, 0, 0.8);
+        }
     }
 
     &__inner{
@@ -102,6 +106,83 @@ $Color-text: #515151;
             }
         }
     }
+
+    &__gallery{
+        margin-top: 40px;
+        width: 100%;
+
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .Web__webLine{
+                margin: 24px 0px;
+            }
+
+            &__title{
+                color: $Color-title;
+            }
+
+            &__content{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                &__item{
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 5px 5px 5px #888888;
+                    padding-bottom: 44px;
+                    cursor: pointer;
+                    position: relative;
+                    width: 23%;
+                    margin-bottom: 24px;
+
+                    &__image{
+                        background-size: cover;
+                        width: 100%;
+                        height: 300px;
+                        top: 0;
+                        left: 0;
+                        transition: all 0.2sease-in;
+                    }
+
+                    &__title{
+                        font-size: 19px;
+                        font-weight: 600;
+                        color: #2E2E2E;
+                        margin: 0px 24px;
+                        margin-top: 24px;
+                        margin-bottom: 4px;
+                        text-transform: uppercase;
+                    }
+
+                    &__author{
+                        font-size: 17px;
+                        margin: 0px 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    &-button{
+        margin: 12px;
+        cursor: pointer;
+    }
+
+    .active{
+        font-weight: 600;
+    }
 }
 
 @media(max-width: 971px){
@@ -133,5 +214,13 @@ $Color-text: #515151;
     .Space__disc{
         display: flex;
         flex-direction: column;
+    }
+    .Space__gallery__inner__content__item{
+        width: 30%;
+    }
+}
+@media (max-width: 500px){
+    .Space__gallery__inner__content__item{
+        width: 48%;
     }
 }

@@ -14,8 +14,19 @@ const user1 = "/User/user1.png"
 const v1 = "/video/kgst.mp4";
 const v2 = "/video/sis.mp4";
 
+const s1 = "/picture/kg2.1.png";
+const s2 = "/picture/kg2.2.png";
+const s3 = "/picture/kg2.3.png";
+const s4 = "/picture/kg2.4.png";
+const s5 = "/picture/kg2.5.png";
+const s6 = "/picture/kg2.6.png";
+const s7 = "/picture/kg2.7.jpg";
+const s8 = "/picture/kg2.8.jpg";
+const s9 = "/picture/kg2.9.jpg";
+const s10 = "/picture/kg2.10.jpg";
+
 const images = {
-    kg1, kg2, kg3, kg4, kg5, kg6, kg7, kg8, d1, user1, v1, v2
+    kg1, kg2, kg3, kg4, kg5, kg6, kg7, kg8, d1, user1, v1, v2, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10
 };
 
 export default images;

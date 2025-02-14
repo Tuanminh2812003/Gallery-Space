@@ -127,6 +127,69 @@ const user = [
     }
 ]
 
-const sections = { danhSachKhongGian, user };
+const slide=[
+    {
+        id: 1,
+        image: images.s1,
+        title: "Tranh1",
+        author: "Tacgia1"
+    },
+    {
+        id: 2,
+        image: images.s2,
+        title: "Tranh2",
+        author: "Tacgia2"
+    },
+    {
+        id: 3,
+        image: images.s3,
+        title: "Tranh3",
+        author: "Tacgia3"
+    },
+    {
+        id: 4,
+        image: images.s4,
+        title: "Tranh4",
+        author: "Tacgia4"
+    },
+    {
+        id: 5,
+        image: images.s5,
+        title: "Tranh5",
+        author: "Tacgia5"
+    },
+    {
+        id: 6,
+        image: images.s6,
+        title: "Tranh6",
+        author: "Tacgia6"
+    },
+    {
+        id: 7,
+        image: images.s7,
+        title: "Tranh7",
+        author: "Tacgia7"
+    },
+    {
+        id: 8,
+        image: images.s8,
+        title: "Tranh8",
+        author: "Tacgia8"
+    },
+    {
+        id: 9,
+        image: images.s9,
+        title: "Tranh9",
+        author: "Tacgia9"
+    },
+    {
+        id: 10,
+        image: images.s10,
+        title: "Tranh10",
+        author: "Tacgia10"
+    },
+]
+
+const sections = { danhSachKhongGian, user, slide };
 
 export default sections;
