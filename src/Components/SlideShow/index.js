@@ -13,7 +13,7 @@ function SlideShow() {
         dots: true, // Hiển thị dot chỉ mục
         infinite: true, // Lặp vô hạn
         speed: 500, // Tốc độ chuyển slide
-        slidesToShow: 6, // Hiển thị 6 ảnh cùng lúc
+        slidesToShow: 4, // Hiển thị 6 ảnh cùng lúc
         slidesToScroll: 1, // Scroll từng ảnh một
         autoplay: true, // Tự động chạy slide
         autoplaySpeed: 3000, // Chuyển sau 5 giây
@@ -23,23 +23,23 @@ function SlideShow() {
         prevArrow: <SamplePrevArrow />, // Custom nút prev
         responsive: [
             {
-                breakpoint: 1500, // Màn hình nhỏ hơn 1024px
-                settings: {
-                    slidesToShow: 4, // Hiển thị 4 ảnh
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1200, // Màn hình nhỏ hơn 1024px
+                breakpoint: 1600, // Màn hình nhỏ hơn 1024px
                 settings: {
                     slidesToShow: 3, // Hiển thị 4 ảnh
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 800, // Màn hình nhỏ hơn 1024px
+                breakpoint: 1300, // Màn hình nhỏ hơn 1024px
                 settings: {
                     slidesToShow: 2, // Hiển thị 4 ảnh
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 800, // Màn hình nhỏ hơn 1024px
+                settings: {
+                    slidesToShow: 1, // Hiển thị 4 ảnh
                     slidesToScroll: 1
                 }
             },
@@ -61,7 +61,7 @@ function SlideShow() {
             <Slider {...settings}>
                 {slide.map((item) => (
                     <div key={item.id} className="slide-item">
-                        <img src={item.image} alt={`Tranh ${item.id}`} className="slide-image" />
+                        <img src={item.image} alt={`Tranh ${item.id}`} className="slide-image" style={{backgroundColor: `${item.background}`}} />
                     </div>
                 ))}
             </Slider>

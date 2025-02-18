@@ -132,61 +132,120 @@ const slide=[
         id: 1,
         image: images.s1,
         title: "Tranh1",
-        author: "Tacgia1"
+        author: "Tacgia1",
+        background: "#FFFFFF"
     },
     {
         id: 2,
         image: images.s2,
         title: "Tranh2",
-        author: "Tacgia2"
+        author: "Tacgia2",
+        background: "#AA1636"
     },
     {
         id: 3,
         image: images.s3,
         title: "Tranh3",
-        author: "Tacgia3"
+        author: "Tacgia3",
+        background: "#FFFFFF"
     },
     {
         id: 4,
         image: images.s4,
         title: "Tranh4",
-        author: "Tacgia4"
+        author: "Tacgia4",
+        background: "#2E1516"
     },
     {
         id: 5,
         image: images.s5,
         title: "Tranh5",
-        author: "Tacgia5"
+        author: "Tacgia5",
+        background: "#2E1516"
     },
     {
         id: 6,
         image: images.s6,
         title: "Tranh6",
-        author: "Tacgia6"
+        author: "Tacgia6",
+        background: "#2E1516"
     },
     {
         id: 7,
         image: images.s7,
         title: "Tranh7",
-        author: "Tacgia7"
+        author: "Tacgia7",
+        background: "#1E1B54"
     },
     {
         id: 8,
         image: images.s8,
         title: "Tranh8",
-        author: "Tacgia8"
+        author: "Tacgia8",
+        background: "#ED008C"
     },
     {
         id: 9,
         image: images.s9,
         title: "Tranh9",
-        author: "Tacgia9"
+        author: "Tacgia9",
+        background: "#E6E6E4"
     },
     {
         id: 10,
         image: images.s10,
         title: "Tranh10",
-        author: "Tacgia10"
+        author: "Tacgia10",
+        background: "#2E1516"
+    },
+    {
+        id: 11,
+        image: images.s11,
+        title: "Tranh11",
+        author: "Tacgia11",
+        background: "#2E1516"
+    },
+    {
+        id: 12,
+        image: images.s12,
+        title: "Tranh12",
+        author: "Tacgia12",
+        background: "#2E1516"
+    },
+    {
+        id: 13,
+        image: images.s13,
+        title: "Tranh13",
+        author: "Tacgia13",
+        background: "#2E1516"
+    },
+    {
+        id: 14,
+        image: images.s14,
+        title: "Tranh14",
+        author: "Tacgia14",
+        background: "#F8A1AE"
+    },
+    {
+        id: 15,
+        image: images.s15,
+        title: "Tranh15",
+        author: "Tacgia15",
+        background: "#6C57A6"
+    },
+    {
+        id: 16,
+        image: images.s16,
+        title: "Tranh16",
+        author: "Tacgia16",
+        background: "#37B0BC"
+    },
+    {
+        id: 17,
+        image: images.s17,
+        title: "Tranh17",
+        author: "Tacgia17",
+        background: "#B05527"
     },
 ]
 

@@ -140,6 +140,7 @@ function Space() {
                                     {currentSlides.map((item) => (
                                         <div key={item.id} className="Space__gallery__inner__content__item">
                                             <div className="Space__gallery__inner__content__item__image" style={{
+                                                        backgroundColor: `${item.background}`,
                                                         backgroundImage: `url(${item.image})`,
                                                     }}>
 
