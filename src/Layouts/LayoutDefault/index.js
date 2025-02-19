@@ -253,7 +253,7 @@ function LayoutDefault(){
                                             DANH SÁCH KHÔNG GIAN
                                         </div>
                                         <Link to={"/space/nghe_thuat_sang_tao"} className="Web__footer__inner__text">
-                                            Đêm đầy sao
+                                            Nghệ thuật sáng tạo
                                         </Link>
                                         <Link to={"/space/dem_day_sao"} className="Web__footer__inner__text">
                                             Kỳ quan thiên nhiên

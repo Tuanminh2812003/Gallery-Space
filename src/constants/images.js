@@ -1,4 +1,4 @@
-const kg1 = "/KhongGian/kg1.png";
+const kg1 = "/KhongGian/kg1.jpg";
 const kg2 = "/KhongGian/kg2.jpg";
 const kg3 = "/KhongGian/kg3.png";
 const kg4 = "/KhongGian/kg4.png";
