@@ -66,7 +66,7 @@ function Home(){
                                                 </div>
                                             </div>
                                             <div className="Web__home__section1__inner__content__right__text">
-                                                Như các nhà giáo dục đã nêu, việc tạo ra một trải nghiệm nghệ thuật mà không có bất kỳ tác phẩm nghệ thuật vật lý nào đang được đề cập và không ảnh hưởng đến tầm nhìn của nghệ sĩ không phải là một nỗ lực nhỏ. May mắn thay, Beyond có sự trợ giúp của vô số máy chiếu, 300 tác phẩm nghệ thuật và 30.000 feet vuông không gian, để đưa sự đắm chìm lên một tầm cao mới và thổi hồn chuyển động vào cuộc sống tĩnh lặng.
+                                                Bước vào không gian 3D của Đại học Quốc gia Hà Nội, bạn sẽ được khám phá một bảo tàng số sống động, nơi kết hợp hài hòa giữa kiến trúc hiện đại và di sản văn hóa. Không gian này không chỉ tái hiện những công trình mang tính biểu tượng của trường, mà còn mở ra một thế giới nghệ thuật phong phú, nơi các ý tưởng sáng tạo được truyền tải qua những mô hình 3D chân thực, hiệu ứng ánh sáng động và trải nghiệm tương tác trực tuyến.
                                             </div>
                                             <div className="Web__home__section1__inner__content__right__button">
                                                 <Link to={"/space/nghe_thuat_sang_tao"}>
