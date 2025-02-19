@@ -120,7 +120,7 @@ function ListSpace() {
                                             <div
                                                 className="ListSpace__inner__content__box__image"
                                                 style={{
-                                                    backgroundImage: `url(${danhSachKhongGian[0].image})`,
+                                                    backgroundImage: `url("/KhongGian/kgcustom.jpg")`,
                                                 }}
                                             ></div>
                                             <div className="ListSpace__inner__content__box__button">

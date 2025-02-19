@@ -6,6 +6,7 @@ const kg5 = "/KhongGian/kg5.png";
 const kg6 = "/KhongGian/kg6.png";
 const kg7 = "/KhongGian/kg7.png";
 const kg8 = "/KhongGian/kg8.png";
+const kgcustom= "/KhongGian/kgcustom.jpg";
 
 const d1 = "/3D/d1.png";
 
@@ -33,7 +34,7 @@ const s16 = "/picture/kg2.16.jpg";
 const s17 = "/picture/kg2.17.jpg";
 
 const images = {
-    kg1, kg2, kg3, kg4, kg5, kg6, kg7, kg8, d1, user1, v1, v2, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17
+    kg1, kg2, kg3, kg4, kg5, kg6, kg7, kg8, kgcustom, d1, user1, v1, v2, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17
 };
 
 export default images;
